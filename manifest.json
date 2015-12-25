@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Link Mastery",
+  "description": "This extension enables you to see the opening behavior of a link before you open it.",
+  "version": "0.1",
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["main.js"]
+  }],
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "web_accessible_resources": ["assets/square.png", "assets/circle.png", "assets/triangle.png"]
+}
